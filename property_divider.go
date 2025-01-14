@@ -68,9 +68,10 @@ func property_divider(properties map[string]int, limit int, priorityList string)
 
 func main() {
     properties := map[string]int{
-        "11": 30,
-        "24": 35,
-        "12": 35,
+        "11": 60,
+        "24": 10,
+        "12": 30,
+        "22": 0,
     }
 
     // Test cases with different scenarios
@@ -82,6 +83,8 @@ func main() {
         {100, "12-11-24"},
         {7, "12-11-24"},
         {20, "12-11-24"},
+        {0, "12-11-24"},
+        {3, "12-11-24"},
     }
 
     for _, tc := range testCases {
@@ -92,14 +95,5 @@ func main() {
         fmt.Printf("Result: %v\n", result)
         
     }
-
-	properties2 := map[string]int{
-        "11": 55,
-        "24": 45,
-	}
-
-	result2 := property_divider(properties2, 3, "24-11")
-
-	fmt.Println(result2)
 
 }

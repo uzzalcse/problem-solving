@@ -6,7 +6,7 @@
 ### Clone the repository 
 
 ``` 
-git clone github.com/uzzalcse/problem-solving
+git clone https://github.com/uzzalcse/problem-solving.git
 cd problem-solving
 
 ```

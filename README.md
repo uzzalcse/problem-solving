@@ -26,3 +26,13 @@ go run property_divider.go
 go test -v
 
 ```
+Generate coverage report:
+```bash
+go test ./... -cover
+go test ./... -coverprofile=coverage.out
+```
+
+View coverage in terminal:
+```bash
+go tool cover -func=coverage.out
+```
